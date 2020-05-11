@@ -1,0 +1,345 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        95.562515258789062,
+        -407.83319091796875,
+        159.83901977539062
+      ],
+      "min": [
+        -86.418525695800781,
+        -644.68994140625,
+        -159.30859375
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 786384,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        0.99999868869781494,
+        0.99938118457794189,
+        0.99988692998886108
+      ],
+      "min": [
+        -0.9999992847442627,
+        -0.99993884563446045,
+        -0.99915850162506104
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        0.97860622406005859,
+        0.84939044713973999,
+        0.99340051412582397,
+        1
+      ],
+      "min": [
+        -0.98432695865631104,
+        -0.84688866138458252,
+        -0.97772449254989624,
+        1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        0.96814298629760742,
+        0.92496997117996216
+      ],
+      "min": [
+        0.0019920000340789557,
+        0.0018729999428614974
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 347703,
+      "max": [
+        65531
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1572768,
+      "componentType": 5126,
+      "count": 37241,
+      "max": [
+        95.545112609863281,
+        -407.83319091796875,
+        159.83901977539062
+      ],
+      "min": [
+        -86.230201721191406,
+        -644.68994140625,
+        -159.30859375
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2019660,
+      "componentType": 5126,
+      "count": 37241,
+      "max": [
+        0.99999654293060303,
+        0.99912369251251221,
+        0.99988692998886108
+      ],
+      "min": [
+        -0.9999992847442627,
+        -0.99993884563446045,
+        -0.99917280673980713
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 1048512,
+      "componentType": 5126,
+      "count": 37241,
+      "max": [
+        0.99380660057067871,
+        0.85540896654129028,
+        0.99621701240539551,
+        1
+      ],
+      "min": [
+        -0.97760200500488281,
+        -0.89313322305679321,
+        -0.98612344264984131,
+        1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 524256,
+      "componentType": 5126,
+      "count": 37241,
+      "max": [
+        0.99800801277160645,
+        0.93817800283432007
+      ],
+      "min": [
+        0.0019920000340789557,
+        0.0018729999428614974
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1390812,
+      "componentType": 5125,
+      "count": 152463,
+      "max": [
+        37240
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "IUPUI Center for Digital Scholarship (https://sketchfab.com/iupuicds)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/bowling-pin-007b32a30e1d4f438a7f7c73421afbdb",
+      "title": "Bowling Pin"
+    },
+    "generator": "Sketchfab-7.0.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 2000664,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 822184,
+      "byteOffset": 2000664,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2466552,
+      "byteOffset": 2822848,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1644368,
+      "byteOffset": 5289400,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 6933768,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/material_0_baseColor.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "material_0",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.31936983050722068
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.635506272315979,
+        -0.6882060170173645,
+        -0.35000613331794739,
+        0,
+        0.47313687205314636,
+        0.70535445213317871,
+        -0.52784144878387451,
+        0,
+        0.61014199256896973,
+        0.16984573006629944,
+        0.77387279272079468,
+        0,
+        245.74154663085938,
+        -153.64547729492188,
+        -270.55368041992188,
+        1
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3,
+        4
+      ],
+      "name": "IFD_BowlingPin_HR_Geometry.obj.cleaner.materialmerger.gles"
+    },
+    {
+      "mesh": 0,
+      "name": ""
+    },
+    {
+      "mesh": 1,
+      "name": ""
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ]
+}
+
