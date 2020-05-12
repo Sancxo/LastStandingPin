@@ -1,4 +1,4 @@
-let renderer, cam, scene, dragControls, controls = {};
+let renderer, cam, scene, dragControls, orbitControls, controls = {};
 let mouseControls = [];
 let ambientLight, keyLight;
 
@@ -26,12 +26,13 @@ technicalSettings = () => {
         settings.clippingMin, 
         settings.clippingMax,
     );
-    cam.position.set(0, settings.pinSize, 5);
+    cam.position.set(0, settings.pinSize, 4);
 
     scene = new THREE.Scene();
 
     dragControls = new THREE.DragControls(mouseControls, cam, document.body);
     dragControls.transformGroup = true;
+    //orbitControls = new THREE.OrbitControls(cam, document.body);
 
     ambientLight = new THREE.AmbientLight(0x404040);
     scene.add(ambientLight);
