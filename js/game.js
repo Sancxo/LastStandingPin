@@ -9,10 +9,16 @@ let settings = {
     clippingMax: 1000,
 };
 
-let textureLoader = new THREE.TextureLoader();
+let models = {
+    winnieThePin: {
+        gltf: 'models/Winnie-the-Pin/scene.gltf',
+    },
+    lightningBlue: {
 
-let floor;
-let pin;
+    },
+};
+
+let floor, pin, lightningBlue, balls = [];
 
 technicalSettings = () => {
     renderer = new THREE.WebGLRenderer({antialias: true});
@@ -53,6 +59,9 @@ technicalSettings = () => {
 };
 
 worldCreation = () => {
+    let textureLoader = new THREE.TextureLoader();
+    let gltfLoader = new THREE.GLTFLoader();
+
     floorCreation = () => {
         let Settings = {
             floorWrappingS: 8,
@@ -83,7 +92,7 @@ worldCreation = () => {
     };
 
     pinCreation = () => {
-        new THREE.GLTFLoader().load('models/Winnie-the-Pin/scene.gltf', function(gltf) {
+        gltfLoader.load('models/Winnie-the-Pin/scene.gltf', function(gltf) {
             pin = gltf.scene;
             scene.add(pin);
             pin.traverse(function(node) {
@@ -99,10 +108,20 @@ worldCreation = () => {
         }, undefined, function(error) {
             console.error('error');
         });
-    }
+    };
 
-    floorCreation();
+    //ball creation
+    lightningBlue = gltfLoader.load('models/Lightning-blue-ball/scene.gltf', function(gltf) {
+        lightningBlue = gltf.scene;
+        scene.add(lightningBlue);
+        lightningBlue.scale.set(0.2, 0.2, 0.2);
+        lightningBlue.position.set(0, 0, -185/2);
+    }, undefined, function(error) {
+        console.error('error');
+    });
+
     pinCreation();
+    floorCreation();
 };
 
 controlSettings = () => {
@@ -114,7 +133,7 @@ controlSettings = () => {
     }, false);  
 };
 
-animate = () => {
+window.onload = animate = () => {
     requestAnimationFrame(animate);
 
     if (controls[81] || controls[65] || controls[37]) {
@@ -126,10 +145,14 @@ animate = () => {
         cam.position.x += 0.05;
     }; //right
 
+    lightningBlue.position.z += 0.3;
+
     renderer.render(scene, cam);
 };
 
 technicalSettings();
 worldCreation();
 controlSettings();
-animate();
+window.onload = function() {
+    animate();
+};
